@@ -1,67 +1,106 @@
+// HeroComponent.jsx
+
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../Stylesheets/home.css';
+import teaImage1 from '../images/tea1.png';
+import teaImage2 from '../images/tea1.png';
+import teaImage3 from '../images/tea1.png';
+import teaImage4 from '../images/tea1.png';
 
 const Home = () => {
   return (
-    <div>
-      {/* Header */}
-      <header className="bg-dark text-white py-3">
-      <div className="container">
-          <h1>Want To Taste Our Tea?</h1>
-          <button className="btn btn-primary">Shop Now</button>
-        </div>
-      </header>
-
-      {/* About Section */}
-      <section className="py-5">
-        <div className="container">
-          <h2>About Us</h2>
-          <p>Some information about your tea business goes here.</p>
-        </div>
-      </section>
-
-      {/* Product Section */}
-      <section className="py-5 bg-light">
-        <div className="container">
-          <h2>Our Tea Products</h2>
-          <div className="row">
-            {/* Add your product cards here */}
-            <div className="col-md-3">
-              <div className="card">
-                <img src="product1.jpg" className="card-img-top" alt="Product 1" />
-                <div className="card-body">
-                  <h5 className="card-title">Product 1</h5>
-                  <p className="card-text">Some product description goes here.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Founder's Note */}
-      <section className="py-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6">
-              <h2>A note from our founder:</h2>
-              <p>Some note from the founder goes here.</p>
-            </div>
-            <div className="col-md-6">
-              <img src="founder.jpg" className="img-fluid" alt="Founder" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-dark text-white py-3">
-        <div className="container">
-          <p>&copy; Your Tea Business</p>
-        </div>
-      </footer>
+<>
+    
+    <div className="hero">
+      <div className="hero-content">
+        <h1>Want To Taste< br/>Our Tea?</h1>
+        <p>Each tea purchase comnes with organically and <br />ethically grown loose LIYONTA tea, carefully<br /> blended to create the perfect cup. </p>
+        <button>Shop Now </button>
+      </div>
     </div>
+
+
+    <div className="aboutus">
+      <div className="aboutus-content">
+        <h1 className="titles">About Liyonta Tea</h1>
+        <p> 
+        Each tea purchase comes with organically and ethically grown 
+        loose LIYONTA tea, carefully blended to create the perfect cup. 
+        Each tea purchase comes with organically and ethically grown 
+        loose LIYONTA tea, carefully blended to create the perfect cup.
+        Each tea purchase comes with organically and ethically grown 
+        loose LIYONTA tea, carefully blended to create the perfect cup.
+        </p>
+        <button>Read More</button>
+      </div>
+    </div>
+
+
+    <div className="teavariants">
+
+      <div className="teavariants-content">
+
+        <h1 className="titles">Our Tea Variants</h1>
+
+        <p className="description">Each tea purchase comes with organically and ethically grown loose LIYONTA tea.</p>
+
+        <div className="tea-containers">
+          <div className="tea-container" style={{ backgroundImage: `url(${teaImage1})` }}>
+            <div className="tea-details">
+              <h3 className="tea-name">PEKOE</h3>
+              <p className="tea-description">Long tippy leaf, silver in color, with hardly any black leaf</p>
+            </div>
+          </div>
+          <div className="tea-container" style={{ backgroundImage: `url(${teaImage2})` }}>
+            <div className="tea-details">
+              <h3 className="tea-name">PEKOE</h3>
+              <p className="tea-description">Long tippy leaf, silver in color, with hardly any black leaf</p>
+            </div>
+          </div>
+          <div className="tea-container" style={{ backgroundImage: `url(${teaImage3})` }}>
+            <div className="tea-details">
+              <h3 className="tea-name">PEKOE</h3>
+              <p className="tea-description">Long tippy leaf, silver in color, with hardly any black leaf</p>
+            </div>
+          </div>
+          <div className="tea-container" style={{ backgroundImage: `url(${teaImage4})` }}>
+            <div className="tea-details">
+              <h3 className="tea-name">PEKOE</h3>
+              <p className="tea-description">Long tippy leaf, silver in color, with hardly any black leaf</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div> 
+      <div>
+
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    </>
+
   );
+
 };
 
 export default Home;
+
